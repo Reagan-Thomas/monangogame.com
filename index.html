@@ -2,20 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test File</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monango Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    /* Center the text on the page */
+    /* Base reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: linear-gradient(135deg, #FFE259 0%, #FFA751 100%);
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: #f0f0f0;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #46211A;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: #46211A;
+      transition: color .2s;
+    }
+    nav a:hover { color: #FFF; }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero img {
+      width: 200px;
+      height: auto;
+      image-rendering: pixelated;
+      border: 4px solid #46211A;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      background: #FFF;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #46211A;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      line-height: 1.5;
+      color: #333;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #FFB347;
+      color: #46211A;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .btn:hover {
+      background: #FFA000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(255,255,255,0.2);
+      font-size: 0.9rem;
+      color: #46211A;
     }
   </style>
 </head>
 <body>
-  <h1>you're in Monango!</h1>
+
+  <header>
+    <h1>Monango Studios</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="335e4ae0-2218-4ad0-91ab-f75ae31160e1.png" alt="Monango mascot">
+    <h2>Welcome to Monango!</h2>
+    <p>Your home for playful, pixel-perfect adventures. We craft games and experiences that blend retro charm with modern creativity—one mango-banana coded dream at a time.</p>
+    <a href="#projects" class="btn">See Our Work</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Monango Studios &bull; All rights reserved.
+  </footer>
+
 </body>
 </html>
